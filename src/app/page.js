@@ -4,6 +4,7 @@ import SplitStickyGallery from "@/component/Gallery";
 import HeroVideo from "@/component/HeroVideo";
 import PortfolioSection from "@/component/PortfolioSection";
 import ServicesPage from "@/component/Service";
+import Testimonials from "@/component/TestimonialSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
    <PortfolioSection/>
    <ServicesPage/>
    <SplitStickyGallery/>
+   <Testimonials/>
    <ContactPage/>
    </>
   );

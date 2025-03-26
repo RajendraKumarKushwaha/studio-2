@@ -1,7 +1,6 @@
-"use client";
+import HeadingAnimation from "@/ClientComponent/HeadingMotion";
 import { LampContainer } from "@/components/ui/lamp";
 import { Camera, Crop, Image, PaintBucket, Aperture, Video } from "lucide-react";
-import { motion } from "framer-motion";
 
 const services = [
   { icon: Camera, title: "Wedding Photography", description: "Capture the most precious moments of your wedding with stunning photography." },
@@ -16,14 +15,7 @@ export default function ServicesPage() {
   return (
     <LampContainer>
       <div className="text-white py-12"> {/* py-16 se py-12 kiya taki space balance ho */}
-        <motion.h2
-          initial={{ opacity: 0.5, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-          className="text-center text-4xl font-bold mb-10"
-        >
-          Our Photography Services
-        </motion.h2>
+         <HeadingAnimation title="Our Photography Services" />
 
         <div className="container px-4 mx-auto py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

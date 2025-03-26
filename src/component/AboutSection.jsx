@@ -1,22 +1,13 @@
-"use client"
 import { LampContainer } from '@/components/ui/lamp';
-import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import { motion } from "framer-motion";
+import HeadingAnimation from '@/ClientComponent/HeadingMotion';
 
 export default function AboutSection() {
   return (
    
      <LampContainer>
           <div className="text-white py-12"> {/* py-16 se py-12 kiya taki space balance ho */}
-            <motion.h2
-              initial={{ opacity: 0.5, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-              className="text-center text-4xl font-bold mb-10"
-            >
-              About Us
-            </motion.h2>
+          <HeadingAnimation title="About Us" />
       <section className=" py-24 flex flex-col items-center text-center">
        
         
