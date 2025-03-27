@@ -61,10 +61,10 @@ export default function HeroSlideshow() {
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto">
-          <a href="/booking" className="bg-[#f28b00] btn hover:bg-[#f28b00] text-white py-3 px-6 rounded-lg text-lg font-medium transition">
+          <a href="/contact-us" className="bg-[#f28b00] btn hover:bg-[#f28b00] text-white py-3 px-6 rounded-lg text-lg font-medium transition">
             Book Now
           </a>
-          <a href="/portfolio" className="border-2 border-white text-white py-3 px-6 rounded-lg text-lg font-medium hover:bg-white hover:text-black transition">
+          <a href="/gallery" className="border-2 border-white text-white py-3 px-6 rounded-lg text-lg font-medium hover:bg-white hover:text-black transition">
             View Portfolio
           </a>
         </div>

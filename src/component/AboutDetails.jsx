@@ -76,8 +76,8 @@ export default function AboutDetails() {
               transition={{ duration: 0.8 }}
               className="p-6 bg-gray-800  shadow-lg"
             >
-              <h4 className="text-2xl text-pink-500 font-semibold mb-4">Our Vision</h4>
-              <p className="text-gray-300 text-lg">To create stunning and timeless visuals that tell stories, evoke emotions, and inspire generations.</p>
+              <h4 className="text-2xl text-[#f28b00] para mb-4">Our Vision</h4>
+              <p className="text-gray-300 text-lg para">To create stunning and timeless visuals that tell stories, evoke emotions, and inspire generations.</p>
             </motion.div>
             
             {/* Experience */}
@@ -87,8 +87,8 @@ export default function AboutDetails() {
               transition={{ duration: 0.9 }}
               className="p-6 bg-gray-800  shadow-lg"
             >
-              <h4 className="text-2xl text-pink-500 font-semibold mb-4">Years of Experience</h4>
-              <p className="text-gray-300 text-lg">Over 10+ years of capturing beautiful moments with precision and artistic vision.</p>
+              <h4 className="text-2xl  text-[#f28b00] para mb-4">Years of Experience</h4>
+              <p className="text-gray-300 para text-lg">Over 10+ years of capturing beautiful moments with precision and artistic vision.</p>
             </motion.div>
             
             {/* Client Trust */}
@@ -98,8 +98,8 @@ export default function AboutDetails() {
               transition={{ duration: 1 }}
               className="p-6 bg-gray-800  shadow-lg"
             >
-              <h4 className="text-2xl text-pink-500 font-semibold mb-4">Trusted by Clients</h4>
-              <p className="text-gray-300 text-lg">We’ve served hundreds of happy clients who trust us for their most special moments.</p>
+              <h4 className="text-2xl text-[#f28b00] para  mb-4">Trusted by Clients</h4>
+              <p className="text-gray-300 para text-lg">We’ve served hundreds of happy clients who trust us for their most special moments.</p>
             </motion.div>
           </div>
         </section>
