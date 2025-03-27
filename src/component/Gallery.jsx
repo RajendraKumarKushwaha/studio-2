@@ -36,15 +36,15 @@ export default function SplitStickyGallery() {
     const prevImage = () => setCurrentIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length)
 
     return (
-        <div className="w-full bg-white ">
-            <div className="container px-4 mx-auto py-24">
+        <div className="w-full bg-slate-50 py-24">
+            <div className="container px-4 mx-auto ">
                 <div className="container px-4 mx-auto text-center space-y-6">
                     <FadeIn delay={0}>
                         <div className="space-y-6">
-                            <h2 className="text-center text-4xl font-bold mb-10">
-                                Our Gallery
+                            <h2 className="text-center text-4xl font-bold mb-10 text-[#f28b00] para">
+                            Cherished Moments
                             </h2>
-                            <p className="text-slate-600 text-lg max-w-3xl mx-auto pb-6">
+                            <p className="text-gray-900 para text-lg max-w-3xl mx-auto pb-6">
                                 Discover how we turn your special moments into timeless frames. Each project is a story, and we’re here to tell it beautifully.
                             </p>
                         </div>

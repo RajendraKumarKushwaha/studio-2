@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 // import { FormModal } from "./FormModal";
 
 export function EnquiryButton({ isHome }) {
@@ -10,16 +11,16 @@ export function EnquiryButton({ isHome }) {
   return (
     <>
       <div className="hidden md:flex">
-        <button
+      <Button
           onClick={() => setOpen(true)}
           className={`px-4 py-2 rounded-md transition
             ${isHome
-              ? "bg-white text-black hover:bg-gray-200"
-              : "bg-black text-white hover:bg-gray-800"
+              ? "bg-[#f28b00] text-white hover:bg-[#f28900]  cursor-pointer py-3  text-lg"
+              : "bg-black text-white hover:bg-black  cursor-pointer py-3  text-lg"
             }`}
         >
           Enquiry Now
-        </button>
+        </Button>
       </div>
 
       {/* <FormModal open={open} setOpen={setOpen} /> */}

@@ -1,6 +1,7 @@
 import AboutSection from "@/component/AboutSection";
 import ContactPage from "@/component/ContactUs";
 import SplitStickyGallery from "@/component/Gallery";
+import HeroSlideshow from "@/component/HeroSlideShow";
 import HeroVideo from "@/component/HeroVideo";
 import PortfolioSection from "@/component/PortfolioSection";
 import ServicesPage from "@/component/Service";
@@ -10,7 +11,8 @@ import Image from "next/image";
 export default function Home() {
   return (
    <>
-   <HeroVideo/>
+   {/* <HeroVideo/> */}
+   <HeroSlideshow/>
    <AboutSection/>
    <PortfolioSection/>
    <ServicesPage/>

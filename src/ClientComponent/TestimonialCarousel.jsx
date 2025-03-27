@@ -9,7 +9,7 @@ import { Autoplay } from 'swiper/modules';
 
 export default function TestimonialsSlider({ testimonials }) {
   return (
-    <div className="w-full container px-4 mx-auto py-6">
+    <div className="container mx-auto px-4 py-6">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={24}
@@ -33,15 +33,15 @@ export default function TestimonialsSlider({ testimonials }) {
       >
         {testimonials.map((item, idx) => (
           <SwiperSlide key={idx}>
-            <div className="bg-zinc-900 p-6 shadow-xl h-full flex flex-col items-center text-center">
+            <div className="border  z-1000  p-6 shadow-xl w-full h-full flex flex-col items-center text-center">
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-20 h-20 rounded-full object-cover mb-4"
+                className="w-20 h-20  rounded-full object-cover mb-4"
               />
-              <p className="text-lg italic text-slate-300 mb-4">"{item.feedback}"</p>
-              <h3 className="text-xl font-semibold text-white">{item.name}</h3>
-              <span className="text-slate-500 text-sm">{item.role}</span>
+              <p className="text-lg para text-gray-900 mb-4">"{item.feedback}"</p>
+              <h3 className="text-xl font-semibold text-[#f28b00]">{item.name}</h3>
+              <span className="text-gray-900 text-sm">{item.role}</span>
             </div>
           </SwiperSlide>
         ))}

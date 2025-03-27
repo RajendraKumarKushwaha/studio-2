@@ -51,14 +51,14 @@ const portfolioItems = [
 
 export default function PortfolioSection() {
     return (
-        <section className="bg-white text-black   py-24 ">
+        <section className="bg-slate-50 text-black   py-24 ">
             <div className="container px-4 mx-auto text-center space-y-6">
                 <FadeIn delay={0}>
                     <div className="space-y-6">
-                        <h2 className="text-center text-4xl font-bold mb-10 text-black">
+                        <h2 className="text-center text-4xl font-bold mb-10  text-[#f28b00] para">
                             Our Portfolio
                         </h2>
-                        <p className="text-slate-600 text-lg max-w-3xl mx-auto">
+                        <p className="text-gray-900 text-lg max-w-3xl mx-auto para">
                             Discover how we turn your special moments into timeless frames. Each project is a story, and we’re here to tell it beautifully.
                         </p>
                     </div>

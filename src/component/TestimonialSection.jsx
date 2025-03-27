@@ -1,8 +1,8 @@
 // components/testimonials/Testimonials.js
 
+import { FadeIn } from "@/ClientComponent/AnimationFadeIn";
 import HeadingAnimation from "@/ClientComponent/HeadingMotion";
 import TestimonialsSlider from "@/ClientComponent/TestimonialCarousel";
-import { LampContainer } from "@/components/ui/lamp";
 
 
 const testimonials = [
@@ -46,15 +46,21 @@ const testimonials = [
 
 export default function Testimonials() {
     return (
-        <LampContainer>
-            <div className="text-white py-12"> {/* py-16 se py-12 kiya taki space balance ho */}
-                <HeadingAnimation title="Our Clients" />
-                <div className=" text-white text-center ">
 
-
-                    <TestimonialsSlider testimonials={testimonials} />
+        <div className="text-white py-24"> {/* py-16 se py-12 kiya taki space balance ho */}
+            <FadeIn delay={0.2}>
+                <div className="text-center mb-12">
+                    <h2 className="text-4xl font-bold text-[#f28b00] para">Our Clients</h2>
+                    <p className="text-black mt-2 para">Turning visions into reality with our clients.</p>
                 </div>
+            </FadeIn>
+            <div className=" text-white text-center ">
+
+                <FadeIn delay={0.4}>
+                    <TestimonialsSlider testimonials={testimonials} />
+                </FadeIn>
             </div>
-        </LampContainer>
+        </div>
+
     );
 }
